@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f766e"/>
+      <stop offset="100%" style="stop-color:#042f2e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#020408"/>
+  <rect x="32" y="32" width="448" height="448" rx="80" fill="url(#bg)" stroke="#2dd4bf" stroke-width="8"/>
+  <text x="256" y="290" font-family="monospace, sans-serif" font-size="140" font-weight="700"
+        fill="#5eead4" text-anchor="middle" filter="url(#glow)">D4</text>
+  <text x="256" y="370" font-family="monospace, sans-serif" font-size="42" font-weight="600"
+        fill="#94a3b8" text-anchor="middle" letter-spacing="12">24B</text>
+</svg>
